@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Conversar com alguém · Raízes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="safety-bar">
+  <div class="wrap">
+    <span class="msg">Se alguém puder ver essa tela agora, saia com segurança.</span>
+    <button class="exit-btn" data-exit>Sair rápido ✕</button>
+  </div>
+</div>
+<div class="topbar">
+  <div class="wrap">
+    <a href="inicio.html" class="brand"><span class="dot"></span><span>Raízes</span></a>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="session-pill" data-session-pill>Visitante</span>
+      <button class="menu-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" data-nav-scrim></div>
+<nav class="nav-panel" data-nav-panel aria-label="Navegação principal">
+  <div class="nav-head">
+    <h3>Navegar</h3>
+    <button class="nav-close" data-nav-close aria-label="Fechar menu">✕</button>
+  </div>
+  <div class="nav-group-label">Começar</div>
+<a href="inicio.html" class="">Início</a>
+<a href="acolhimento.html" class="">Acolhimento</a>
+<a href="conversar.html" class="active">Conversar com alguém</a>
+<div class="nav-group-label">Apoio profissional</div>
+<a href="psicologas-rede.html" class="">Psicólogas da rede</a>
+<a href="clinica-especializada.html" class="">Clínica especializada</a>
+<a href="caps-clinicas-escola.html" class="">CAPS e clínicas-escola</a>
+<a href="sobreviventes.html" class="">Conversas com quem já venceu</a>
+<div class="nav-group-label">Recursos</div>
+<a href="localizacao.html" class="">Localização</a>
+<a href="lei-maria-da-penha.html" class="">Lei Maria da Penha</a>
+<a href="livros.html" class="">Livros</a>
+<a href="documentarios.html" class="">Documentários</a>
+<div class="nav-group-label">Sobre</div>
+<a href="sobre.html" class="">Sobre a rede</a>
+</nav>
+<div class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Categoria 1 e 2</span>
+    <h1>Conversar com alguém</h1>
+    <p class="lede">Escolha o tipo de escuta que faz mais sentido pra você agora. Você pode mudar de ideia depois.</p>
+  </div>
+</div><section class=""><div class="wrap">
+<form class="form-card" data-demo-form="conversar">
+  <div class="field">
+    <label>Com quem você gostaria de falar?</label>
+    <div class="chip-group">
+      <label class="chip"><input type="radio" name="com_quem" value="psicologa" required>Uma psicóloga da rede</label>
+      <label class="chip"><input type="radio" name="com_quem" value="sobrevivente">Uma mulher que já venceu essa barreira</label>
+      <label class="chip"><input type="radio" name="com_quem" value="sem_preferencia">Sem preferência</label>
+    </div>
+  </div>
+  <div class="field">
+    <label>Formato</label>
+    <div class="chip-group">
+      <label class="chip"><input type="radio" name="formato" value="individual" required>Conversa individual</label>
+      <label class="chip"><input type="radio" name="formato" value="grupo">Roda de conversa em grupo</label>
+    </div>
+  </div>
+  <div class="field">
+    <label>Quando é melhor pra você?</label>
+    <div class="chip-group">
+      <label class="chip"><input type="radio" name="quando" value="manha" required>Manhã</label>
+      <label class="chip"><input type="radio" name="quando" value="tarde">Tarde</label>
+      <label class="chip"><input type="radio" name="quando" value="noite">Noite</label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Pedir uma conversa</button>
+  <div class="confirm-box" data-confirm>Pedido enviado. Você será avisada com discrição, sem detalhes visíveis em notificação, assim que houver alguém disponível.</div>
+</form>
+</div></section>
+<footer>
+  <div class="wrap">
+    <div><strong>Raízes</strong> — Rede de Apoio · Agosto Lilás</div>
+    <div>Em risco imediato, ligue <strong>190</strong>. Para denúncia e orientação, <strong>180</strong>, 24h.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

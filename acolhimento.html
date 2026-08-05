@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Acolhimento · Raízes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="safety-bar">
+  <div class="wrap">
+    <span class="msg">Se alguém puder ver essa tela agora, saia com segurança.</span>
+    <button class="exit-btn" data-exit>Sair rápido ✕</button>
+  </div>
+</div>
+<div class="topbar">
+  <div class="wrap">
+    <a href="inicio.html" class="brand"><span class="dot"></span><span>Raízes</span></a>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="session-pill" data-session-pill>Visitante</span>
+      <button class="menu-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" data-nav-scrim></div>
+<nav class="nav-panel" data-nav-panel aria-label="Navegação principal">
+  <div class="nav-head">
+    <h3>Navegar</h3>
+    <button class="nav-close" data-nav-close aria-label="Fechar menu">✕</button>
+  </div>
+  <div class="nav-group-label">Começar</div>
+<a href="inicio.html" class="">Início</a>
+<a href="acolhimento.html" class="active">Acolhimento</a>
+<a href="conversar.html" class="">Conversar com alguém</a>
+<div class="nav-group-label">Apoio profissional</div>
+<a href="psicologas-rede.html" class="">Psicólogas da rede</a>
+<a href="clinica-especializada.html" class="">Clínica especializada</a>
+<a href="caps-clinicas-escola.html" class="">CAPS e clínicas-escola</a>
+<a href="sobreviventes.html" class="">Conversas com quem já venceu</a>
+<div class="nav-group-label">Recursos</div>
+<a href="localizacao.html" class="">Localização</a>
+<a href="lei-maria-da-penha.html" class="">Lei Maria da Penha</a>
+<a href="livros.html" class="">Livros</a>
+<a href="documentarios.html" class="">Documentários</a>
+<div class="nav-group-label">Sobre</div>
+<a href="sobre.html" class="">Sobre a rede</a>
+</nav>
+<div class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Primeiro passo</span>
+    <h1>Um acolhimento, não um formulário</h1>
+    <p class="lede">Leva menos de dois minutos. Não existe resposta errada — o objetivo é só entender por onde começar com você.</p>
+  </div>
+</div><section class=""><div class="wrap">
+<form class="form-card" data-demo-form="triagem">
+  <div class="field">
+    <label>Como você está se sentindo em relação à sua segurança agora?</label>
+    <div class="chip-group">
+      <label class="chip"><input type="radio" name="urgencia" value="seguranca_ok" required>Estou segura agora</label>
+      <label class="chip"><input type="radio" name="urgencia" value="tensao">Sinto tensão, mas não é imediato</label>
+      <label class="chip"><input type="radio" name="urgencia" value="risco">Sinto que posso estar em risco</label>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>O que você está buscando agora? (marque quantas fizer sentido)</label>
+    <div class="chip-group">
+      <label class="chip"><input type="checkbox" name="busca" value="psicologico">Acompanhamento psicológico</label>
+      <label class="chip"><input type="checkbox" name="busca" value="conversa_par">Conversar com quem já passou por isso</label>
+      <label class="chip"><input type="checkbox" name="busca" value="juridico">Entender meus direitos</label>
+      <label class="chip"><input type="checkbox" name="busca" value="so_informacao">Só quero informação, por enquanto</label>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="msg">Quer contar um pouco, com suas palavras? (opcional)</label>
+    <textarea id="msg" name="mensagem" placeholder="Você não precisa contar tudo agora. Só o que for confortável."></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Enviar acolhimento</button>
+  <div class="form-note">Isto não é uma emergência. Se você corre risco agora, ligue <strong>190</strong> ou <strong>180</strong> — não espere o formulário.</div>
+  <div class="confirm-box" data-confirm>Recebemos você. Alguém da equipe vai te responder com o encaminhamento mais adequado. Enquanto isso, você pode explorar as <a href="psicologas-rede.html">psicólogas da rede</a> ou as <a href="sobreviventes.html">conversas com quem já venceu</a>.</div>
+</form>
+</div></section>
+<footer>
+  <div class="wrap">
+    <div><strong>Raízes</strong> — Rede de Apoio · Agosto Lilás</div>
+    <div>Em risco imediato, ligue <strong>190</strong>. Para denúncia e orientação, <strong>180</strong>, 24h.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

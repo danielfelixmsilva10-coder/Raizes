@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Conversas com quem já venceu · Raízes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="safety-bar">
+  <div class="wrap">
+    <span class="msg">Se alguém puder ver essa tela agora, saia com segurança.</span>
+    <button class="exit-btn" data-exit>Sair rápido ✕</button>
+  </div>
+</div>
+<div class="topbar">
+  <div class="wrap">
+    <a href="inicio.html" class="brand"><span class="dot"></span><span>Raízes</span></a>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="session-pill" data-session-pill>Visitante</span>
+      <button class="menu-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" data-nav-scrim></div>
+<nav class="nav-panel" data-nav-panel aria-label="Navegação principal">
+  <div class="nav-head">
+    <h3>Navegar</h3>
+    <button class="nav-close" data-nav-close aria-label="Fechar menu">✕</button>
+  </div>
+  <div class="nav-group-label">Começar</div>
+<a href="inicio.html" class="">Início</a>
+<a href="acolhimento.html" class="">Acolhimento</a>
+<a href="conversar.html" class="">Conversar com alguém</a>
+<div class="nav-group-label">Apoio profissional</div>
+<a href="psicologas-rede.html" class="">Psicólogas da rede</a>
+<a href="clinica-especializada.html" class="">Clínica especializada</a>
+<a href="caps-clinicas-escola.html" class="">CAPS e clínicas-escola</a>
+<a href="sobreviventes.html" class="active">Conversas com quem já venceu</a>
+<div class="nav-group-label">Recursos</div>
+<a href="localizacao.html" class="">Localização</a>
+<a href="lei-maria-da-penha.html" class="">Lei Maria da Penha</a>
+<a href="livros.html" class="">Livros</a>
+<a href="documentarios.html" class="">Documentários</a>
+<div class="nav-group-label">Sobre</div>
+<a href="sobre.html" class="">Sobre a rede</a>
+</nav>
+<div class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Categoria 2</span>
+    <h1>Conversas com quem já venceu essa barreira</h1>
+    <p class="lede">Mulheres voluntárias, treinadas em escuta ativa e supervisionadas por uma psicóloga da rede — para acolher, não para substituir terapia.</p>
+  </div>
+</div><section class=""><div class="wrap">
+<div class="filters" data-filters>
+  <button class="filter-btn active" data-filter="todas">Todas</button>
+  <button class="filter-btn" data-filter="individual">Mentoria 1:1</button>
+  <button class="filter-btn" data-filter="grupo">Roda de conversa</button>
+</div>
+<div class="grid"><div class="profile-card card" data-tags="individual">
+  <div class="avatar">J.</div>
+  <h3>Voluntária · perfil ilustrativo</h3>
+  <div class="badge-row"><span class="badge">Mentoria 1:1</span></div>
+  <p style="color:var(--ink-soft); font-size:0.9rem;">Conversa individual, online</p>
+  <div class="availability">Disponível esta semana</div>
+</div><div class="profile-card card" data-tags="grupo">
+  <div class="avatar">A.</div>
+  <h3>Voluntária · perfil ilustrativo</h3>
+  <div class="badge-row"><span class="badge">Roda de conversa</span></div>
+  <p style="color:var(--ink-soft); font-size:0.9rem;">Grupo quinzenal, online</p>
+  <div class="availability">Próxima roda em breve</div>
+</div><div class="profile-card card" data-tags="individual,grupo">
+  <div class="avatar">T.</div>
+  <h3>Voluntária · perfil ilustrativo</h3>
+  <div class="badge-row"><span class="badge">Mentoria 1:1</span><span class="badge">Roda de conversa</span></div>
+  <p style="color:var(--ink-soft); font-size:0.9rem;">Individual ou em grupo</p>
+  <div class="availability">Disponível</div>
+</div></div>
+<div class="loc-note" style="margin-top:26px;">Todas as voluntárias passam por treinamento de escuta ativa e são supervisionadas por uma psicóloga da rede — elas acolhem, não substituem terapia.</div>
+</div></section>
+<footer>
+  <div class="wrap">
+    <div><strong>Raízes</strong> — Rede de Apoio · Agosto Lilás</div>
+    <div>Em risco imediato, ligue <strong>190</strong>. Para denúncia e orientação, <strong>180</strong>, 24h.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

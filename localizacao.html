@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Localização · Raízes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="safety-bar">
+  <div class="wrap">
+    <span class="msg">Se alguém puder ver essa tela agora, saia com segurança.</span>
+    <button class="exit-btn" data-exit>Sair rápido ✕</button>
+  </div>
+</div>
+<div class="topbar">
+  <div class="wrap">
+    <a href="inicio.html" class="brand"><span class="dot"></span><span>Raízes</span></a>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="session-pill" data-session-pill>Visitante</span>
+      <button class="menu-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" data-nav-scrim></div>
+<nav class="nav-panel" data-nav-panel aria-label="Navegação principal">
+  <div class="nav-head">
+    <h3>Navegar</h3>
+    <button class="nav-close" data-nav-close aria-label="Fechar menu">✕</button>
+  </div>
+  <div class="nav-group-label">Começar</div>
+<a href="inicio.html" class="">Início</a>
+<a href="acolhimento.html" class="">Acolhimento</a>
+<a href="conversar.html" class="">Conversar com alguém</a>
+<div class="nav-group-label">Apoio profissional</div>
+<a href="psicologas-rede.html" class="">Psicólogas da rede</a>
+<a href="clinica-especializada.html" class="">Clínica especializada</a>
+<a href="caps-clinicas-escola.html" class="">CAPS e clínicas-escola</a>
+<a href="sobreviventes.html" class="">Conversas com quem já venceu</a>
+<div class="nav-group-label">Recursos</div>
+<a href="localizacao.html" class="active">Localização</a>
+<a href="lei-maria-da-penha.html" class="">Lei Maria da Penha</a>
+<a href="livros.html" class="">Livros</a>
+<a href="documentarios.html" class="">Documentários</a>
+<div class="nav-group-label">Sobre</div>
+<a href="sobre.html" class="">Sobre a rede</a>
+</nav>
+<div class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Categoria 3</span>
+    <h1>Onde buscar ajuda perto de você</h1>
+    <p class="lede">Canais nacionais, gratuitos, disponíveis em qualquer cidade do Brasil.</p>
+  </div>
+</div><section id="canais" class=""><div class="wrap">
+<ul class="loc-list">
+  <li><a class="loc-link" href="https://www.gov.br/mulheres/pt-br/ligue180" target="_blank" rel="noopener">
+    <div><div class="name">Central de Atendimento à Mulher</div><div class="desc">Denúncia, orientação e encaminhamento, 24h, todos os dias.</div></div>
+    <div class="num">180</div></a></li>
+  <li><a class="loc-link" href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres" target="_blank" rel="noopener">
+    <div><div class="name">Emergência policial</div><div class="desc">Risco imediato à vida.</div></div>
+    <div class="num">190</div></a></li>
+  <li><a class="loc-link" href="https://new.safernet.org.br/" target="_blank" rel="noopener">
+    <div><div class="name">SaferNet Brasil</div><div class="desc">Denúncia e remoção de imagens íntimas divulgadas sem consentimento.</div></div>
+    <div class="num">safernet.org.br ↗</div></a></li>
+  <li><a class="loc-link" href="https://stopncii.org/" target="_blank" rel="noopener">
+    <div><div class="name">StopNCII.org</div><div class="desc">Bloqueia preventivamente a circulação de fotos/vídeos íntimos, sem enviar a imagem a terceiros.</div></div>
+    <div class="num">stopncii.org ↗</div></a></li>
+</ul>
+</div></section><section class=""><div class="wrap">
+<div class="form-card" style="margin-top:0;">
+  <h3 style="font-size:1.1rem; margin-bottom:6px;">Buscar unidades perto de você</h3>
+  <p style="color:var(--ink-soft); font-size:0.9rem; margin-bottom:16px;">Protótipo de demonstração — na versão final, isso puxaria dados reais por região.</p>
+  <form data-cep-form style="display:flex; gap:10px; flex-wrap:wrap;">
+    <input type="text" placeholder="Seu CEP" style="flex:1; min-width:160px;">
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </form>
+  <div class="loc-note" data-cep-result style="display:none;"></div>
+</div>
+<style>[data-cep-result].show{display:block !important; margin-top:16px;}</style>
+</div></section>
+<footer>
+  <div class="wrap">
+    <div><strong>Raízes</strong> — Rede de Apoio · Agosto Lilás</div>
+    <div>Em risco imediato, ligue <strong>190</strong>. Para denúncia e orientação, <strong>180</strong>, 24h.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Psicólogas da rede · Raízes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="safety-bar">
+  <div class="wrap">
+    <span class="msg">Se alguém puder ver essa tela agora, saia com segurança.</span>
+    <button class="exit-btn" data-exit>Sair rápido ✕</button>
+  </div>
+</div>
+<div class="topbar">
+  <div class="wrap">
+    <a href="inicio.html" class="brand"><span class="dot"></span><span>Raízes</span></a>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="session-pill" data-session-pill>Visitante</span>
+      <button class="menu-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" data-nav-scrim></div>
+<nav class="nav-panel" data-nav-panel aria-label="Navegação principal">
+  <div class="nav-head">
+    <h3>Navegar</h3>
+    <button class="nav-close" data-nav-close aria-label="Fechar menu">✕</button>
+  </div>
+  <div class="nav-group-label">Começar</div>
+<a href="inicio.html" class="">Início</a>
+<a href="acolhimento.html" class="">Acolhimento</a>
+<a href="conversar.html" class="">Conversar com alguém</a>
+<div class="nav-group-label">Apoio profissional</div>
+<a href="psicologas-rede.html" class="active">Psicólogas da rede</a>
+<a href="clinica-especializada.html" class="">Clínica especializada</a>
+<a href="caps-clinicas-escola.html" class="">CAPS e clínicas-escola</a>
+<a href="sobreviventes.html" class="">Conversas com quem já venceu</a>
+<div class="nav-group-label">Recursos</div>
+<a href="localizacao.html" class="">Localização</a>
+<a href="lei-maria-da-penha.html" class="">Lei Maria da Penha</a>
+<a href="livros.html" class="">Livros</a>
+<a href="documentarios.html" class="">Documentários</a>
+<div class="nav-group-label">Sobre</div>
+<a href="sobre.html" class="">Sobre a rede</a>
+</nav>
+<div class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Categoria 1</span>
+    <h1>Psicólogas da rede</h1>
+    <p class="lede">Profissionais com CRP ativo e experiência em trauma e violência de gênero, com vagas gratuitas e a preço social.</p>
+  </div>
+</div><section class=""><div class="wrap">
+<div class="filters" data-filters>
+  <button class="filter-btn active" data-filter="todas">Todas</button>
+  <button class="filter-btn" data-filter="trauma">Trauma</button>
+  <button class="filter-btn" data-filter="tept">TEPT</button>
+  <button class="filter-btn" data-filter="ansiedade">Ansiedade</button>
+  <button class="filter-btn" data-filter="online">Atende online</button>
+</div>
+<div class="grid"><div class="profile-card card" data-tags="trauma,tept">
+  <div class="avatar">MF</div>
+  <h3>Psicóloga · perfil ilustrativo</h3>
+  <div class="badge-row"><span class="badge">Trauma</span><span class="badge">TEPT</span></div>
+  <p style="color:var(--ink-soft); font-size:0.9rem;">Atendimento online e presencial</p>
+  <div class="availability">Vagas gratuitas abertas</div>
+</div><div class="profile-card card" data-tags="ansiedade,trauma">
+  <div class="avatar">RC</div>
+  <h3>Psicóloga · perfil ilustrativo</h3>
+  <div class="badge-row"><span class="badge">Ansiedade</span><span class="badge">Trauma</span></div>
+  <p style="color:var(--ink-soft); font-size:0.9rem;">Atendimento online</p>
+  <div class="availability">Vagas a preço social</div>
+</div><div class="profile-card card" data-tags="tept,online">
+  <div class="avatar">LS</div>
+  <h3>Psicóloga · perfil ilustrativo</h3>
+  <div class="badge-row"><span class="badge">TEPT</span><span class="badge">Online</span></div>
+  <p style="color:var(--ink-soft); font-size:0.9rem;">Atendimento 100% online</p>
+  <div class="availability">Vagas gratuitas abertas</div>
+</div><div class="profile-card card" data-tags="ansiedade,online">
+  <div class="avatar">VA</div>
+  <h3>Psicóloga · perfil ilustrativo</h3>
+  <div class="badge-row"><span class="badge">Ansiedade</span><span class="badge">Online</span></div>
+  <p style="color:var(--ink-soft); font-size:0.9rem;">Atendimento online</p>
+  <div class="availability">Lista de espera curta</div>
+</div></div>
+<div class="loc-note" style="margin-top:26px;">Estes são perfis ilustrativos para o protótipo. Na versão real, cada psicóloga é cadastrada com CRP verificado e a busca pode filtrar por especialidade, formato e disponibilidade real.</div>
+</div></section>
+<footer>
+  <div class="wrap">
+    <div><strong>Raízes</strong> — Rede de Apoio · Agosto Lilás</div>
+    <div>Em risco imediato, ligue <strong>190</strong>. Para denúncia e orientação, <strong>180</strong>, 24h.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

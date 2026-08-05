@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Entrar · Raízes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="safety-bar">
+  <div class="wrap">
+    <span class="msg">Se alguém puder ver essa tela agora, saia com segurança.</span>
+    <button class="exit-btn" data-exit>Sair rápido ✕</button>
+  </div>
+</div>
+
+<div class="login-shell">
+  <div class="login-card">
+    <a href="inicio.html" class="brand"><span class="dot"></span><span>Raízes</span></a>
+    <h1>Um espaço só seu.</h1>
+    <p class="lede">Entre com seus dados, ou continue sem se identificar. Nenhuma das duas opções te compromete a nada.</p>
+
+    <form data-login-form>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+      </div>
+      <div class="field">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="********" required minlength="6">
+        <div class="hint">Protótipo de demonstração — não use aqui uma senha que você usa em outro lugar.</div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+    </form>
+
+    <div class="divider">ou</div>
+    <button class="btn-anon" data-anon-btn>Continuar anônima →</button>
+
+    <div class="login-foot">Nenhum dado sensível fica salvo junto da sua identidade. Saiba mais em <a href="sobre.html" style="color:var(--rose); font-weight:600;">Sobre a rede</a>.</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Raízes</strong> — Rede de Apoio · Agosto Lilás</div>
+    <div>Em risco imediato, ligue <strong>190</strong>. Para denúncia e orientação, <strong>180</strong>, 24h.</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
