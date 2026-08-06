@@ -13,7 +13,7 @@ Todos os arquivos precisam continuar juntos na mesma pasta.
 
 ## Sobre o "banco de dados"
 
-Você pediu um banco de dados "da forma mais discreta possível". Duas coisas
+Banco de dados "da forma mais discreta possível". Duas coisas
 importantes:
 
 1. **O que existe agora**: os formulários (login, acolhimento, pedido de
